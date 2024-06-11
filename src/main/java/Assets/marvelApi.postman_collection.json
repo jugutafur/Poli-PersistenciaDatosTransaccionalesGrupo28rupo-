@@ -1,0 +1,171 @@
+{
+  "info": {
+    "_postman_id": "54bd2ebb-8ec9-4052-803b-5497b71948f7",
+    "name": "marvelApi",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "15599908"
+  },
+  "item": [
+    {
+      "name": "health",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "basic",
+          "basic": [
+            {
+              "key": "password",
+              "value": "726a9095-90d4-4b41-a506-6eef8733d3e0",
+              "type": "string"
+            },
+            {
+              "key": "username",
+              "value": "user",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"description\": \"esta es la nueva des\" \r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8090/marvel/api/user/health",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8090",
+          "path": [
+            "marvel",
+            "api",
+            "user",
+            "health"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GELL_ALL",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8090/marvel/api/user/all",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8090",
+          "path": [
+            "marvel",
+            "api",
+            "user",
+            "all"
+          ]
+        },
+        "description": "acceso a kits"
+      },
+      "response": []
+    },
+    {
+      "name": "UserById",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8090/marvel/api/user?userId=2",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8090",
+          "path": [
+            "marvel",
+            "api",
+            "user"
+          ],
+          "query": [
+            {
+              "key": "userId",
+              "value": "2"
+            }
+          ]
+        },
+        "description": "acceso a kits"
+      },
+      "response": []
+    },
+    {
+      "name": "createUser",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"id\": 2,\r\n    \"name\": \"Miguel Casimiro\",\r\n    \"identification\": \"51874589\",\r\n    \"email\": \"MiguelCasimiro@gmail.com\",\r\n    \"password\": \"4561\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8090/marvel/api/user/save",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8090",
+          "path": [
+            "marvel",
+            "api",
+            "user",
+            "save"
+          ]
+        },
+        "description": "acceso a kits"
+      },
+      "response": []
+    },
+    {
+      "name": "deleteUser",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8090/marvel/api/user/delete?userId=3",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8090",
+          "path": [
+            "marvel",
+            "api",
+            "user",
+            "delete"
+          ],
+          "query": [
+            {
+              "key": "userId",
+              "value": "3"
+            }
+          ]
+        },
+        "description": "acceso a kits"
+      },
+      "response": []
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+-- marvelUsuarios
+
+create table if not exists marvelusuarios(
+	id Serial not null,
+	nombre varchar(100) not null,
+	identificacion varchar(100) not null,
+	correo varchar(100) not null,
+	clave varchar(100) not null,
+	primary key ("id")
+)
+
+INSERT INTO marvelusuarios VALUES
+(1, 'juan tafur', '1065874658', 'juantalopez@gmail.com',1234),
+(2, 'carlos guitierrez', '1032478968', 'carlosguitierrez@gmail.com',9876);
+
+select * from marvelUsuarios
